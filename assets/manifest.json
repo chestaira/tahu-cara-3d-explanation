@@ -1,0 +1,27 @@
+﻿[
+    {
+        "file":  "logo.png",
+        "sha256":  "0D821D937633FF1109839DCD79B76A5684B454951989AB99385220FF51003AAA",
+        "bytes":  61301
+    },
+    {
+        "file":  "whoosh.mp3",
+        "sha256":  "F71AD48A87A65D0A48C7257366660B272EA448BE58951B2CC9FDE695E9AB9AB4",
+        "bytes":  18390
+    },
+    {
+        "file":  "ui popup.mp3",
+        "sha256":  "A0B8DD00D4F3D0F06C223AA4762F756427FCA3BC6A78E801F153DE2BA788CDA3",
+        "bytes":  43467
+    },
+    {
+        "file":  "click.mp3",
+        "sha256":  "E9FDB3ED918D112C06A6573FAE13C236B18D7C6D2225AB917048E20851D60FEB",
+        "bytes":  33792
+    },
+    {
+        "file":  "bgm.mp3",
+        "sha256":  "7CC8CA5A9B62445785B0BBF582D3E3914CF3DFE1262533C5998676E66A132297",
+        "bytes":  4300800
+    }
+]
