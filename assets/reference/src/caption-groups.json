@@ -1,0 +1,842 @@
+[
+  [
+    {
+      "word": "Pernah",
+      "start": 1.64,
+      "end": 2.18
+    },
+    {
+      "word": "lihat",
+      "start": 2.18,
+      "end": 2.42
+    },
+    {
+      "word": "air",
+      "start": 2.42,
+      "end": 2.6
+    },
+    {
+      "word": "mancur",
+      "start": 2.6,
+      "end": 3.0
+    },
+    {
+      "word": "menyala",
+      "start": 3.0,
+      "end": 3.3
+    },
+    {
+      "word": "seharian,",
+      "start": 3.3,
+      "end": 3.92
+    }
+  ],
+  [
+    {
+      "word": "airnya",
+      "start": 4.16,
+      "end": 4.9
+    },
+    {
+      "word": "naik,",
+      "start": 4.9,
+      "end": 5.2
+    },
+    {
+      "word": "jatuh,",
+      "start": 5.42,
+      "end": 5.8
+    },
+    {
+      "word": "lalu",
+      "start": 6.06,
+      "end": 6.24
+    },
+    {
+      "word": "naik",
+      "start": 6.24,
+      "end": 6.44
+    },
+    {
+      "word": "lagi.",
+      "start": 6.44,
+      "end": 6.74
+    }
+  ],
+  [
+    {
+      "word": "Kok",
+      "start": 7.32,
+      "end": 7.48
+    },
+    {
+      "word": "bisa",
+      "start": 7.48,
+      "end": 7.72
+    },
+    {
+      "word": "terus",
+      "start": 7.72,
+      "end": 7.92
+    },
+    {
+      "word": "berputar?",
+      "start": 7.92,
+      "end": 8.46
+    }
+  ],
+  [
+    {
+      "word": "Kita",
+      "start": 8.88,
+      "end": 9.06
+    },
+    {
+      "word": "bedah",
+      "start": 9.06,
+      "end": 9.32
+    },
+    {
+      "word": "bagian",
+      "start": 9.32,
+      "end": 9.74
+    },
+    {
+      "word": "dalam",
+      "start": 9.74,
+      "end": 9.98
+    },
+    {
+      "word": "pompanya.",
+      "start": 9.98,
+      "end": 10.48
+    }
+  ],
+  [
+    {
+      "word": "Di",
+      "start": 10.86,
+      "end": 11.0
+    },
+    {
+      "word": "contoh",
+      "start": 11.0,
+      "end": 11.32
+    },
+    {
+      "word": "ini,",
+      "start": 11.32,
+      "end": 11.58
+    },
+    {
+      "word": "pompa",
+      "start": 11.94,
+      "end": 12.18
+    },
+    {
+      "word": "terendam",
+      "start": 12.18,
+      "end": 12.6
+    },
+    {
+      "word": "di",
+      "start": 12.6,
+      "end": 12.8
+    },
+    {
+      "word": "bak",
+      "start": 12.8,
+      "end": 12.9
+    },
+    {
+      "word": "penampung.",
+      "start": 12.9,
+      "end": 13.38
+    }
+  ],
+  [
+    {
+      "word": "Air",
+      "start": 13.86,
+      "end": 14.12
+    },
+    {
+      "word": "masuk",
+      "start": 14.12,
+      "end": 14.48
+    },
+    {
+      "word": "lewat",
+      "start": 14.48,
+      "end": 14.8
+    },
+    {
+      "word": "kisi",
+      "start": 14.8,
+      "end": 15.04
+    },
+    {
+      "word": "penyaring.",
+      "start": 15.04,
+      "end": 15.5
+    }
+  ],
+  [
+    {
+      "word": "Lalu",
+      "start": 16.22,
+      "end": 16.76
+    },
+    {
+      "word": "menuju",
+      "start": 16.76,
+      "end": 17.2
+    },
+    {
+      "word": "bagian",
+      "start": 17.2,
+      "end": 17.68
+    },
+    {
+      "word": "tengah",
+      "start": 17.68,
+      "end": 17.96
+    },
+    {
+      "word": "impeller.",
+      "start": 17.96,
+      "end": 18.42
+    }
+  ],
+  [
+    {
+      "word": "Si",
+      "start": 18.98,
+      "end": 19.26
+    },
+    {
+      "word": "roda",
+      "start": 19.26,
+      "end": 19.54
+    },
+    {
+      "word": "bersudu",
+      "start": 19.54,
+      "end": 20.1
+    },
+    {
+      "word": "di",
+      "start": 20.1,
+      "end": 20.22
+    },
+    {
+      "word": "dalam",
+      "start": 20.22,
+      "end": 20.4
+    },
+    {
+      "word": "rumah",
+      "start": 20.4,
+      "end": 20.66
+    },
+    {
+      "word": "pompa.",
+      "start": 20.66,
+      "end": 21.16
+    }
+  ],
+  [
+    {
+      "word": "Sekarang",
+      "start": 21.72,
+      "end": 22.18
+    },
+    {
+      "word": "kita",
+      "start": 22.18,
+      "end": 22.34
+    },
+    {
+      "word": "mendekat.",
+      "start": 22.34,
+      "end": 22.82
+    }
+  ],
+  [
+    {
+      "word": "Di",
+      "start": 23.28,
+      "end": 23.38
+    },
+    {
+      "word": "belakangnya,",
+      "start": 23.38,
+      "end": 23.98
+    },
+    {
+      "word": "motor",
+      "start": 24.3,
+      "end": 24.54
+    },
+    {
+      "word": "listrik",
+      "start": 24.54,
+      "end": 25.0
+    },
+    {
+      "word": "memutar",
+      "start": 25.0,
+      "end": 25.36
+    },
+    {
+      "word": "rotor",
+      "start": 25.36,
+      "end": 25.7
+    }
+  ],
+  [
+    {
+      "word": "yang",
+      "start": 25.7,
+      "end": 26.16
+    },
+    {
+      "word": "terhubung",
+      "start": 26.16,
+      "end": 26.62
+    },
+    {
+      "word": "ke",
+      "start": 26.62,
+      "end": 26.76
+    },
+    {
+      "word": "impeller.",
+      "start": 26.76,
+      "end": 27.18
+    }
+  ],
+  [
+    {
+      "word": "Ruang",
+      "start": 28.18,
+      "end": 28.52
+    },
+    {
+      "word": "air",
+      "start": 28.52,
+      "end": 28.72
+    },
+    {
+      "word": "dipisahkan",
+      "start": 28.72,
+      "end": 29.32
+    },
+    {
+      "word": "dari",
+      "start": 29.32,
+      "end": 29.5
+    },
+    {
+      "word": "kumparan",
+      "start": 29.5,
+      "end": 29.86
+    },
+    {
+      "word": "listrik",
+      "start": 29.86,
+      "end": 30.28
+    }
+  ],
+  [
+    {
+      "word": "oleh",
+      "start": 30.28,
+      "end": 30.46
+    },
+    {
+      "word": "dinding",
+      "start": 30.46,
+      "end": 30.86
+    },
+    {
+      "word": "kedap",
+      "start": 30.86,
+      "end": 31.14
+    },
+    {
+      "word": "air.",
+      "start": 31.14,
+      "end": 31.46
+    }
+  ],
+  [
+    {
+      "word": "Perhatikan",
+      "start": 32.22,
+      "end": 32.74
+    },
+    {
+      "word": "titik",
+      "start": 32.74,
+      "end": 33.22
+    },
+    {
+      "word": "biru",
+      "start": 33.22,
+      "end": 33.54
+    },
+    {
+      "word": "ini.",
+      "start": 33.54,
+      "end": 33.78
+    }
+  ],
+  [
+    {
+      "word": "Air",
+      "start": 34.4,
+      "end": 34.74
+    },
+    {
+      "word": "datang",
+      "start": 34.74,
+      "end": 35.12
+    },
+    {
+      "word": "dari",
+      "start": 35.12,
+      "end": 35.32
+    },
+    {
+      "word": "tengah.",
+      "start": 35.32,
+      "end": 35.78
+    }
+  ],
+  [
+    {
+      "word": "Lalu",
+      "start": 36.12,
+      "end": 36.32
+    },
+    {
+      "word": "sudu",
+      "start": 36.32,
+      "end": 36.72
+    },
+    {
+      "word": "yang",
+      "start": 36.72,
+      "end": 36.86
+    },
+    {
+      "word": "berputar",
+      "start": 36.86,
+      "end": 37.34
+    },
+    {
+      "word": "mempercepatnya",
+      "start": 37.34,
+      "end": 38.08
+    },
+    {
+      "word": "ke",
+      "start": 38.08,
+      "end": 38.22
+    },
+    {
+      "word": "arah",
+      "start": 38.22,
+      "end": 39.26
+    },
+    {
+      "word": "tepi.",
+      "start": 39.26,
+      "end": 39.52
+    }
+  ],
+  [
+    {
+      "word": "Rumah",
+      "start": 40.04,
+      "end": 40.4
+    },
+    {
+      "word": "pompa",
+      "start": 40.4,
+      "end": 40.7
+    },
+    {
+      "word": "mengumpulkan",
+      "start": 40.7,
+      "end": 41.28
+    },
+    {
+      "word": "aliran",
+      "start": 41.28,
+      "end": 41.56
+    },
+    {
+      "word": "itu",
+      "start": 41.56,
+      "end": 41.98
+    }
+  ],
+  [
+    {
+      "word": "dan",
+      "start": 41.98,
+      "end": 42.22
+    },
+    {
+      "word": "mengarahkannya",
+      "start": 42.22,
+      "end": 42.86
+    },
+    {
+      "word": "ke",
+      "start": 42.86,
+      "end": 43.02
+    },
+    {
+      "word": "lubang",
+      "start": 43.02,
+      "end": 43.36
+    },
+    {
+      "word": "keluar.",
+      "start": 43.36,
+      "end": 43.66
+    }
+  ],
+  [
+    {
+      "word": "Dari",
+      "start": 44.66,
+      "end": 44.98
+    },
+    {
+      "word": "sini,",
+      "start": 44.98,
+      "end": 45.32
+    },
+    {
+      "word": "air",
+      "start": 45.62,
+      "end": 45.72
+    },
+    {
+      "word": "terdorong",
+      "start": 45.72,
+      "end": 46.14
+    },
+    {
+      "word": "naik",
+      "start": 46.14,
+      "end": 46.44
+    }
+  ],
+  [
+    {
+      "word": "melalui",
+      "start": 46.44,
+      "end": 46.84
+    },
+    {
+      "word": "pipa",
+      "start": 46.84,
+      "end": 47.18
+    },
+    {
+      "word": "menuju",
+      "start": 47.18,
+      "end": 47.46
+    },
+    {
+      "word": "nosel.",
+      "start": 47.46,
+      "end": 48.02
+    }
+  ],
+  [
+    {
+      "word": "Nosel",
+      "start": 48.12,
+      "end": 48.44
+    },
+    {
+      "word": "membentuk",
+      "start": 48.44,
+      "end": 48.84
+    },
+    {
+      "word": "pancarannya.",
+      "start": 48.84,
+      "end": 49.46
+    }
+  ],
+  [
+    {
+      "word": "Setelah",
+      "start": 49.92,
+      "end": 50.34
+    },
+    {
+      "word": "keluar,",
+      "start": 50.34,
+      "end": 50.6
+    },
+    {
+      "word": "gravitasi",
+      "start": 50.88,
+      "end": 51.6
+    },
+    {
+      "word": "menarik",
+      "start": 51.6,
+      "end": 52.12
+    },
+    {
+      "word": "air",
+      "start": 52.12,
+      "end": 52.32
+    },
+    {
+      "word": "kembali",
+      "start": 52.32,
+      "end": 52.7
+    }
+  ],
+  [
+    {
+      "word": "ke",
+      "start": 52.7,
+      "end": 52.84
+    },
+    {
+      "word": "bak,",
+      "start": 52.84,
+      "end": 53.02
+    },
+    {
+      "word": "lalu",
+      "start": 53.3,
+      "end": 53.6
+    },
+    {
+      "word": "siklusnya",
+      "start": 53.6,
+      "end": 54.12
+    },
+    {
+      "word": "berulang.",
+      "start": 54.12,
+      "end": 54.62
+    }
+  ],
+  [
+    {
+      "word": "Kalau",
+      "start": 55.42,
+      "end": 55.76
+    },
+    {
+      "word": "saringan",
+      "start": 55.76,
+      "end": 56.22
+    },
+    {
+      "word": "tersumbat",
+      "start": 56.22,
+      "end": 56.84
+    },
+    {
+      "word": "atau",
+      "start": 56.84,
+      "end": 57.12
+    }
+  ],
+  [
+    {
+      "word": "air",
+      "start": 57.12,
+      "end": 57.42
+    },
+    {
+      "word": "terlalu",
+      "start": 57.42,
+      "end": 57.82
+    },
+    {
+      "word": "rendah,",
+      "start": 57.82,
+      "end": 58.36
+    },
+    {
+      "word": "aliran",
+      "start": 58.6,
+      "end": 58.84
+    },
+    {
+      "word": "bisa",
+      "start": 58.84,
+      "end": 59.14
+    },
+    {
+      "word": "melemah.",
+      "start": 59.14,
+      "end": 59.72
+    }
+  ],
+  [
+    {
+      "word": "Pipa",
+      "start": 60.18,
+      "end": 60.56
+    },
+    {
+      "word": "yang",
+      "start": 60.56,
+      "end": 60.68
+    },
+    {
+      "word": "makin",
+      "start": 60.68,
+      "end": 60.98
+    },
+    {
+      "word": "tinggi",
+      "start": 60.98,
+      "end": 61.36
+    },
+    {
+      "word": "juga",
+      "start": 61.36,
+      "end": 61.56
+    }
+  ],
+  [
+    {
+      "word": "membuat",
+      "start": 61.56,
+      "end": 61.96
+    },
+    {
+      "word": "debit",
+      "start": 61.96,
+      "end": 62.28
+    },
+    {
+      "word": "pompa",
+      "start": 62.28,
+      "end": 62.64
+    },
+    {
+      "word": "ini",
+      "start": 62.64,
+      "end": 62.76
+    },
+    {
+      "word": "berkurang.",
+      "start": 62.76,
+      "end": 63.34
+    }
+  ],
+  [
+    {
+      "word": "Jadi,",
+      "start": 64.22,
+      "end": 64.72
+    },
+    {
+      "word": "air",
+      "start": 65.14,
+      "end": 65.3
+    },
+    {
+      "word": "mancur",
+      "start": 65.3,
+      "end": 65.82
+    },
+    {
+      "word": "memakai",
+      "start": 65.82,
+      "end": 66.22
+    },
+    {
+      "word": "ulang",
+      "start": 66.22,
+      "end": 66.46
+    },
+    {
+      "word": "air",
+      "start": 66.46,
+      "end": 66.64
+    },
+    {
+      "word": "di",
+      "start": 66.64,
+      "end": 66.8
+    },
+    {
+      "word": "bak",
+      "start": 66.8,
+      "end": 67.0
+    }
+  ],
+  [
+    {
+      "word": "sambil",
+      "start": 67.0,
+      "end": 67.68
+    },
+    {
+      "word": "mendapat",
+      "start": 67.68,
+      "end": 68.0
+    },
+    {
+      "word": "energi",
+      "start": 68.0,
+      "end": 68.6
+    },
+    {
+      "word": "dari",
+      "start": 68.6,
+      "end": 68.78
+    },
+    {
+      "word": "listrik.",
+      "start": 68.78,
+      "end": 69.32
+    }
+  ],
+  [
+    {
+      "word": "Mau",
+      "start": 69.82,
+      "end": 70.08
+    },
+    {
+      "word": "dibedah",
+      "start": 70.08,
+      "end": 70.48
+    },
+    {
+      "word": "bagian",
+      "start": 70.48,
+      "end": 70.82
+    },
+    {
+      "word": "noselnya",
+      "start": 70.82,
+      "end": 71.24
+    },
+    {
+      "word": "juga?",
+      "start": 71.24,
+      "end": 71.52
+    }
+  ]
+]
