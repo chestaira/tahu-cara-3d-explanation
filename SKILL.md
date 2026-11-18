@@ -192,15 +192,26 @@ Dependensi template: React, Remotion, Three, @remotion/three, @react-three/fiber
 - Periksa: teks/callout/pill tidak terpotong atau mengambang; titik-leader-label terhubung; spasi karaoke utuh; kartu compact tanpa ghosting; skala realistis dan minY >= floorY (sertakan pengukuran bounds); lighting sesuai konteks, tekstur dan kedalaman tiga lapis terbaca.
 - Jika gagal, perbaiki dan ulang frame terdampak sebelum melaporkan selesai. Simpan gambar serta laporan QA. Empat still melengkapi preview motion, bukan menggantikan preview video.
 
+### Paritas preview terakhir dan final — wajib, tanpa jalur render terpisah
+
+- Preview terakhir harus memakai ID komposisi final, frame absolut, props, dimensi, fps, aset, kode, renderer WebGL, post-processing, dan pengaturan render yang sama. Dilarang membuat komposisi `Preview` yang meremap frame lewat nested `Sequence`, offset, atau cabang material/kamera khusus preview. `Sequence` untuk adegan/outro di komposisi utama tetap sah.
+- Draft awal boleh 540×960. Preview terakhir untuk persetujuan wajib berasal dari render 1080×1920, 30 fps dengan pengaturan final. Bila perlu versi kecil, turunkan ukuran hasil video yang sama setelah render; jangan membuat ulang scene pada jalur lain.
+- Render cuplikan memakai rentang frame komposisi final (`--frames=start-end`). Catat mapping frame preview ke frame sumber secara eksplisit. Sertakan hook, transisi cover tertutup ke terbuka, mekanisme murah/premium atau seluruh mekanisme terkait, penutupan kembali, dan batas masuk outro. Periksa video berurutan: still yang dibuka langsung pada satu frame tidak membuktikan state setelah ratusan frame sebelumnya.
+- Bekukan bundle beserta aset dan hash source/lockfile/konfigurasi untuk versi preview. Simpan potongan video atau frame lossless preview sebagai sumber final; setelah persetujuan, render hanya rentang yang belum tersedia. Rakit video final dengan potongan yang sudah disetujui tanpa merender ulang atau mengubah packet video tersebut (`-c:v copy` bila memakai chunk H.264). Gunakan satu mix audio penuh yang sama dan potong sesuai sample/frame sumber untuk preview.
+- Bila kode, aset, props, timeline, renderer, atau konfigurasi berubah setelah preview, versi review sebelumnya tidak berlaku. Buat dan kirim preview revisi sebelum full render, kecuali user secara eksplisit mengubah ketentuan itu.
+- Verifikasi otomatis decoded frame hash (`framemd5`) seluruh frame preview terhadap rentang sumber di final. Jumlah frame, mapping, dan hash harus cocok; simpan bukti di laporan QA. Jangan mengklaim paritas hanya dari kemiripan contact sheet. Validasi final tetap mencakup rentang di luar cuplikan preview.
+- Cutaway tidak boleh bergantung hanya pada opacity 0. Kelompokkan cover dan sembunyikan dengan `visible={false}` atau unmount saat reveal penuh, sehingga tidak ikut beauty/depth/AO/shadow pass. Selama fade gunakan material transparan dengan `depthWrite={false}`; saat berganti solid/transparan pastikan shader/material diperbarui. Uji cold still dan video berurutan sebelum, selama, dan sesudah transisi.
+- Blueprint `assets/reference/src/video.tsx` hanya mendaftarkan komposisi utama serta audio. Jangan menghidupkan kembali wrapper preview lama dari snapshot proyek.
+
 ### Urutan produksi
 
 1. Simpan naskah/sumber, audio, timestamp, caption groups, dan rencana shot. Implementasikan modul terpisah untuk timeline, assemblies, materials, lighting/post, camera, phenomena, callouts, HUD state, subtitle, dan outro.
 2. Selesaikan produksi sesuai jalur audio yang dipilih tanpa pertanyaan ulang yang tidak perlu. Pertahankan aset dan keputusan user yang telah disetujui.
-3. Setiap proyek baru DAN setiap revisi wajib menghasilkan, memeriksa, dan MENGIRIM preview nyata sebelum render penuh. Default preview 540×960, 30 fps, 5–8 detik; perubahan motion/kamera/UI harus berupa video, bukan hanya still. Montase boleh bila perlu mencakup beberapa interval; beri durasi dan jelaskan bagian timeline yang dicakup.
+3. Setiap proyek baru DAN setiap revisi wajib menghasilkan, memeriksa, dan MENGIRIM preview nyata sebelum render penuh. Draft awal boleh 540×960; preview terakhir wajib bersumber dari render komposisi final 1080×1920, 30 fps sesuai aturan paritas di atas. Durasi 5–8 detik boleh diperpanjang agar seluruh transisi penting tercakup. Perubahan motion/kamera/UI harus berupa video. Montase wajib menyimpan mapping frame sumber.
 4. Render preview dengan concurrency 1, GPU job berurutan, terutama bila laptop pernah lag. Jangan polling background job; lanjut pekerjaan independen dan gunakan notifikasi selesai.
 5. Tinjau hasil render: material, layar gelap, bayangan, geometri, grounding, framing, leader endpoints, world-synced pills, single-card maximum, subtitle boundary, dan outro. Simpan QA dengan bukti aktual; still tidak membuktikan kelancaran gerak.
 6. Kirim tautan preview dan tunggu persetujuan versi tersebut sebelum full render. Persetujuan versi lama tidak berlaku untuk revisi baru. Instruksi eksplisit user dapat mengganti gate preview ini.
-7. Render final 1080×1920, 30 fps setelah diizinkan. Gunakan satu worker bila beban perangkat tinggi; hindari GPU job paralel. Verifikasi decode, ukuran, frame rate, durasi, audio presence/loudness/true peak, serta frame representatif sebelum delivery.
+7. Render rentang final 1080×1920, 30 fps yang belum tersedia setelah diizinkan, lalu gabungkan dengan sumber frame preview yang sudah disetujui. Gunakan satu worker bila beban perangkat tinggi; hindari GPU job paralel. Verifikasi paritas decoded frame hash, decode, ukuran, frame rate, durasi, audio presence/loudness/true peak, serta frame representatif sebelum delivery.
 8. Simpan laporan QA, batas pemeriksaan, dan hasil akhir. Jangan mengklaim MP4 selesai, audio tersinkron, atau seluruh QA lolos jika baru kode/still yang tersedia.
 9. Setelah render final selesai, WAJIB setorkan paket copywriting siap salin untuk YouTube Shorts dan Instagram Reels sesuai Modul D. Sertakan paket dalam respons delivery tanpa menunggu permintaan tambahan.
 10. Integrasikan cover pada frame 0 komposisi video utama sesuai Modul E sejak penyusunan hook. Periksa crop dan transisi cover dalam QA/preview sebelum render final; frame 0 video menjadi sampul yang dapat dipilih dari timeline publikasi.
@@ -212,6 +223,7 @@ Dependensi template: React, Remotion, Three, @remotion/three, @react-three/fiber
 - [ ] Word-level JSON dari audio; coverage dan alignment diperiksa.
 - [ ] Seluruh 11 hukum di atas diterapkan dan bukti QA dicatat.
 - [ ] Preview perubahan dikirim; persetujuan versi terbaru tersedia sebelum full render.
+- [ ] Preview terakhir berasal dari komposisi/frame/config final yang sama; bundle dan aset dibekukan; sumber frame preview digunakan ulang dalam final; decoded frame hash seluruh cuplikan cocok.
 - [ ] Final hanya diklaim setelah file dan pemeriksaan tersedia.
 - [ ] Paket copywriting Shorts & Reels disetorkan: tiga judul maksimal 50 karakter, caption lengkap, CTA komentar, dan 5–8 hashtag termasuk #TahuCara.
 - [ ] Frame 0 menjadi integrated cover; judul bold Plus Jakarta Sans 800, 3–5 kata utuh dalam zona top 32%–42%, aksen #D9F938, crop tengah 1:1/4:5; tampil 0–1.4 detik lalu fade sebelum kartu dan diperiksa tanpa tabrakan UI.

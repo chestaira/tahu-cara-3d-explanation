@@ -38,13 +38,6 @@ export function Video(){
 }
 function SceneDone({handle}:{handle:number}){useEffect(()=>continueRender(handle),[handle]);return null;}
 function AudioReview(){return <AutoAudioLayer events={events} outroFrame={OUTRO} narration="narration-normalized.wav" speechWindows={groups.map(g=>({start:g[0].start,end:g[g.length-1].end}))}/>;}
-export const previewSections=[
-  {name:'Cover dan taman hidup',source:0,length:120},
-  {name:'Reveal bak dan rumah pompa',source:320,length:60},
-  {name:'Close-up motor',source:720,length:45},
-  {name:'Aliran impeller',source:1080,length:45},
-  {name:'Opacity kembali solid',source:1930,length:90},
-  {name:'Outro',source:2153,length:60},
-];
-function Preview(){let offset=0;return <>{previewSections.map(section=>{const start=offset;offset+=section.length;return <Sequence key={section.name} from={start} durationInFrames={section.length}><Sequence from={-section.source}><Video/></Sequence></Sequence>;})}</>;}
-export function Root(){return <><Composition id="PompaAirMancur" component={Video} width={1080} height={1920} fps={30} durationInFrames={DURATION}/><Composition id="Preview" component={Preview} width={1080} height={1920} fps={30} durationInFrames={previewSections.reduce((sum,s)=>sum+s.length,0)}/><Composition id="AudioReview" component={AudioReview} width={1080} height={1920} fps={30} durationInFrames={DURATION}/></>;}
+// Render preview ranges from PompaAirMancur itself, then cache and reuse in final.
+// See SKILL.md: Paritas preview terakhir dan final. No nested preview offsets.
+export function Root(){return <><Composition id="PompaAirMancur" component={Video} width={1080} height={1920} fps={30} durationInFrames={DURATION}/><Composition id="AudioReview" component={AudioReview} width={1080} height={1920} fps={30} durationInFrames={DURATION}/></>;}

@@ -1,6 +1,6 @@
 # Golden Reference Blueprint — Tahu Cara
 
-Baseline: pompa-air-mancur preview v4, disetujui pengguna 18 November 2026. Source asli disimpan di `src/`; versi dependensi pada `package.json`. Ini referensi visual yang disetujui, bukan jaminan semua topik bebas bug.
+Baseline visual: pompa-air-mancur preview v4, disetujui pengguna 18 November 2026. Versi dependensi pada `package.json`. Workflow preview diperbarui 18 November 2026: wrapper komposisi Preview dihapus agar frame selalu berasal dari komposisi utama. Ini referensi visual yang disetujui, bukan jaminan semua topik bebas bug.
 
 ## Wajib dibaca sebelum produksi
 
@@ -30,3 +30,4 @@ Baseline: pompa-air-mancur preview v4, disetujui pengguna 18 November 2026. Sour
 - Format baseline 1080×1920, 30 fps; wind/flow/audio tertentu memakai 30 fps. Bila fps berubah, konversi timing ke fps proyek.
 - Gunakan environment indoor/studio atau outdoor/sunset sesuai lokasi. Baseline outdoor exposure .78; review actual still saat mengganti kamera/material.
 - Uji TypeScript, provisioning, still dan preview motion tiap proyek. Periksa semantik aliran, occlusion, bounds, spasi caption, endpoint callout dan horizon pada semua shot.
+- Preview terakhir dan final wajib memakai komposisi utama, frame absolut, bundle, aset, renderer dan setting identik. Render cuplikan 1080×1920 dengan `--frames=start-end`, cache potongan dan pakai ulang dalam final; simpan mapping dan uji decoded `framemd5`. Jangan menyalin wrapper Preview dari snapshot proyek lama. Aturan lengkap: `../../SKILL.md`, bagian paritas preview/final.
